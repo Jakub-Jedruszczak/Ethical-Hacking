@@ -1,72 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup form</title>
-    <link rel="stylesheet" href="signup.css">
-</head>
-<body>
+<html>
+    <head>
+        <title>Sliding Registration and Login form</title>
+        <!--External CSS file-->
+        <link rel="stylesheet" type="text/css" href="sliding-reg-login.css">
 
-    <div class="container">
-        <div class="box">
-            <h2>Create Account</h2>
-            <form action="#">
+        <!-- Jquery library js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!--Jquery code for sliding effect-->
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+</html>
+    <div id="box">
 
-                <div class="input_box">
-                    <input type="text" class="name" name="name" required>
-                    <label>Username</label>
-                    <img src="images/user.png">
-                </div>
-                <p class="error_message"></p>
+        <div id="main"></div>
 
-
-                <div class="input_box">
-                    <input type="password" class="password" name="password" required>
-                    <label>Password</label>
-                    <img src="images/visible.png" class="password_image">
-                </div>
-                <p class="error_message"></p>
-
-
-
-                <div class="input_box">
-                    <input type="text" class="email" name="email" required>
-                    <label>Email</label>
-                </div>
-                <p class="error_message"></p>
-
-
-                <button class="signup_button" type="submit">Create Account</button>
-                <div class="login_link"><a href="login.php">Already have an Account ?</a></div>
-                <div class="contact_link"><a href="#">Contact Us</a></div>
-            </form>
+        <div id="loginform">
+            <h1>LOGIN</h1>
+            <input type="text" name="" placeholder="Email"><br>
+            <input type="Password" name="" placeholder="Password"><br>
+            <button>LOGIN</button>
         </div>
-    </div>
-    
+
+            <div id="signupform">
+                <h1>SIGN UP</h1>
+                <input type="text" name="" placeholder="Name"><br>
+                <input type="text" name="" placeholder="Email"><br>
+                <input type="password" name="" placeholder="Password"><br>
+                <button>SIGN UP</button>
+            </div>
+
+            <div id="loginmsg"> Have An Account?</div>
+
+            <div id="signupmsg"> Dont Have An Account?</div>
+
+            <button id="loginBtn">LOGIN</button>
+            <button id="signupBtn">SIGN UP</button>
+        </div> 
 </body>
-<script>
-
-    let password_image = document.querySelector('.password_image');
-    let password = document.querySelector('.password');
-    let error_message = document.querySelectorAll('.error_message');
-
-    password_image.onclick = function(){
-        if (password.type == 'password') {
-            password.type = 'text';
-            password_image.src = 'images/hide.png';
-        }else{
-            password.type = 'password';
-            password_image.src = 'images/visible.png';
-        }
-    }
-
-    error_message.forEach(error_message => {
-        if(error_message.innerText == ''){
-            error_message.style.display = 'none';
-        }
-    });
-
-</script>
 </html>
