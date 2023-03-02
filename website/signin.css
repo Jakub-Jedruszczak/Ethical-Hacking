@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 350px;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+.box h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.box h2::before{
+    position: absolute;
+    content: '';
+    background: linear-gradient(45deg , #6114f7 , #ff3232);
+    width: 185px;
+    height: 5px;
+    right: 80px;
+    bottom: -5px;
+    border-radius: 50px;
+}
+.error_message{
+    color: red;
+    font-size: 18px;
+    padding: 2px 5px;
+}
+.box .input_box{
+    width: 100%;
+    display: flex;
+    border: 1px solid #000;
+    align-items: center;
+    margin-top: 22px;
+    position: relative;
+}
+.box .input_box img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+}
+.box .input_box input[type="text"] , .box .input_box input[type="password"]{
+    width: 100%;
+    font-size: 25px;
+    padding: 12px 10px;
+    outline: none;
+    border: none;
+}
+.box .input_box label{
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    font-size: 25px;
+    color: #00000094;
+    pointer-events: none;
+    background-color: #fff;
+    padding: 0px 5px;
+    transition: 0.2s;
+}
+.box .input_box input:focus + label,
+.box .input_box input:valid + label{
+    top: -10px;
+    font-size: 16px;
+    color: blue;
+}
+.box .signup_button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+    padding: 5px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 40px;
+    transition: 0.2s;
+}
+.box .signup_button:active{
+    transform: scale(0.9);
+}
+.box .login_link , .box .contact_link{
+    text-align: center;
+    margin-top: 20px;
+}
+.box .login_link a , .box .contact_link a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.box .login_link a:hover , .box .contact_link a:hover{
+    text-decoration: underline;
+}
