@@ -1,102 +1,122 @@
-*{
-    padding: 0;
+body{
     margin: 0;
+    padding: 0;
+    background: #023F92;
+    font-family: 'Railway', sans-serif;
 }
-.container{
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.box{
-    width: 350px;
-    background-color: #fff;
-    padding: 20px 30px;
-}
-.box h2{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    position: relative;
-}
-.box h2::before{
+#box{
+    height: 350px;
+    width:1000px;
+    background: #051937;
+    border-radius: 5px;
     position: absolute;
-    content: '';
-    background: linear-gradient(45deg , #6114f7 , #ff3232);
-    width: 185px;
-    height: 5px;
-    right: 80px;
-    bottom: -5px;
-    border-radius: 50px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
 }
-.error_message{
-    color: red;
-    font-size: 18px;
-    padding: 2px 5px;
-}
-.box .input_box{
-    width: 100%;
-    display: flex;
-    border: 1px solid #000;
-    align-items: center;
-    margin-top: 22px;
-    position: relative;
-}
-.box .input_box img{
-    width: 30px;
-    height: 30px;
-    margin: 0px 5px;
-}
-.box .input_box input[type="text"] , .box .input_box input[type="password"]{
-    width: 100%;
-    font-size: 25px;
-    padding: 12px 10px;
-    outline: none;
-    border: none;
-}
-.box .input_box label{
+#main{
+    height: 450px;
+    width:480px;
+    background: #0fbcf9;
+    border-radius: 0px;
     position: absolute;
-    left: 5px;
-    top: 12px;
-    font-size: 25px;
-    color: #00000094;
-    pointer-events: none;
-    background-color: #fff;
-    padding: 0px 5px;
-    transition: 0.2s;
+    top:50%;
+    left:70%;
+    transform:translate(-50%, -50%);
+    z-index: 999;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e,#23a6d5,#23d5ab);
+    background-size: 400%, 400%;
+    animation: gradient 15s ease infinite;
 }
-.box .input_box input:focus + label,
-.box .input_box input:valid + label{
-    top: -10px;
+
+#loginform, #signupform{
+    position: absolute;
+    top:50%;
+    left:70%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+#signupform{
+    top:45%;
+    left:75%;
+    visibility: hidden;
+}
+#loginform h1, #signupform h1{
+    font-family:"Raleway" ,sans-serif;
+    font-size: 25px;
+    color:#051937;
+}
+#loginform input, #signupform input{
+height: 40px;
+width: 300px;
+border:0;
+outline: none;
+border-bottom: 1px solid #051937;
+margin: 5px;
+background: none;
+}
+input::placeholder{
+    color:#fff;
+}
+
+#loginform button, #signupform button{
+    height:35px;
+    width:130px;
+    background-color: #051937;
+    font-family: 'Railway' ,sans-serif;
     font-size: 16px;
-    color: blue;
-}
-.box .signup_button{
-    background-color: #000;
-    color: #fff;
     border: none;
-    font-size: 28px;
-    padding: 5px 20px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 40px;
-    transition: 0.2s;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 175px;
+    color:#fff;
 }
-.box .signup_button:active{
-    transform: scale(0.9);
+#loginBtn, #signupBtn{
+    height: 35px;
+    width:120px;
+    background: transparent;
+    color:#0fbcf9;
+    border:1px solid #0fbcf9;
+    border-radius: 5px;
+    outline: none;
+    position:absolute;
+    top:65%;
+    left:75%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s;
 }
-.box .login_link , .box .contact_link{
-    text-align: center;
-    margin-top: 20px;
+#signupBtn{
+    left:25%;
 }
-.box .login_link a , .box .contact_link a{
-    text-decoration: none;
-    color: #000;
-    font-size: 20px;
-    transition: 0.2s;
+#loginBtn:hover, #signupBtn:hover{
+   background-color: #023F92; 
+   color: fff;
+   cursor: pointer;
 }
-.box .login_link a:hover , .box .contact_link a:hover{
-    text-decoration: underline;
+#loginmsg, #signupmsg{
+    font-family: 'Raleway' , sans-serif;
+    font-size: 25px;
+    color:#0fbcf9;
+    position: absolute;
+    top:35%;
+    left:75%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#signupmsg{
+    left:25%;
+}
+/*animation effect*/
+@keyframes gradient{
+   0%{
+    background-position: 0% 50%;
+   } 
+   50%{
+    background-position: 100% 50%;
+   } 
+   100%{
+    background-position: 0% 50%;
+   } 
 }
