@@ -1,0 +1,354 @@
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Navbar Section */
+.navbar{
+  background: #131313;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo{
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.fa-gem{
+  margin-right: 0.5rem;
+}
+
+.navbar__menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item{
+  height:80px;
+}
+
+.navbar__links{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f77062;
+  color: #fff;
+
+}
+/* this is supposed to make the sign up buttun have a hover effect  */
+.buttom:hover{
+  background: #4837ff;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover{
+  color: #f77062;
+  transition: all 0.3s ease;
+}
+
+/* mobile response  */
+@media screen and (max-width: 960px) {
+  .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+  }
+
+/* drop down menue design */
+
+  .navbar__menu {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      opacity: 0;
+      transition: all 0.5s ease;
+      height: 50vh;
+      z-index: -1;
+      background: #131313;
+  }
+
+  .navbbar__menu.active {
+      background: #131313;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease ;
+      z-index: 99;
+      height: 50vh;
+      font-size: 1.6rem;
+  }
+
+  #navbar__logo {
+      padding-left: 25px;
+  }
+
+  .navbar__toggle .bar{
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+  }
+
+  .navbar__item {
+      width: 100%;
+  }
+
+  .navbar__links{
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+  }
+
+
+#mobile-menu {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  transform: translate(5%, 20%);
+}
+
+/* navigation button */
+
+.navbar__btn {
+ padding-bottom: 2rem;
+}
+
+.button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  margin: 0;
+
+}
+
+.navbar__toggle .bar {
+  display: block;
+  cursor: pointer;
+}
+
+#mobile-menu.is-active .bar:nth-child(2){
+  opacity: 0;
+}
+
+#mobile-menu.is-active .bar:nth-child(1){
+  transform: translate(8px) rotate(45deg);
+}
+
+#mobile-menu.is-active .bar:nth-child(3){
+  transform: translate(-8px) rotate(-45deg);
+}
+
+}
+
+
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 65vh;
+  background-color: #141414;
+  z-index: 1;
+  width: 100%;
+  max-width: 2000px;
+  padding: 0 50px; 
+}
+
+.main__content h1 {
+  font-size: 4rem;
+  background-color:#ff8177;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color:transparent;
+}
+
+.main__content h2 {
+  font-size: 4rem;
+  background-color:#ff8177;
+  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color:transparent;
+}
+
+.main__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.paragraph__container{
+background-color: #141414;
+width: auto;
+height: 350px;
+}
+
+#paragraph__aboutus{
+margin-right: 50px;
+margin-left: 50px;
+color: white;
+font-family: 'Kumbh Sans';
+font-size: 175%;
+text-decoration: none;
+}
+
+#main__img--about{
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main__img--container{
+  width: 700px;
+  height: 550px;
+  transform: translate(-50%, -50%);
+  margin-top: 150px;
+  margin-left: 800px;
+  position: absolute;
+  }
+
+  /* Footer Section */
+
+  .title {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .Main {
+    position: relative;
+
+  }
+
+  .footer__container {
+    background-color: #141414;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__logo {
+    color: #141414;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__links{
+    width: 60%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    position: top;
+    display: flex;
+    
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+
+}
+
+.footer__link--items h2{
+    margin-bottom: 16px;
+}
+
+.footer__link--items > h2{
+    color: #141414;
+}
+
+.footer__link--items a {
+    color: #141414;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover{
+    color: #141414;
+    transition: 0.3s ease-out;
+}
+
