@@ -285,6 +285,17 @@ text-decoration: none;
   html{
     height: 100%;
     box-sizing: border-box;
+<<<<<<< Updated upstream
+=======
+}
+body{
+    background-color: #131313;
+    position:relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 180px;
+    box-sizing: inherit;
+>>>>>>> Stashed changes
 }
 body{
     background-color: #131313;
@@ -308,4 +319,72 @@ body{
     min-height: 100px;
     padding-bottom: 10px;
 
+<<<<<<< Updated upstream
 }
+=======
+.footer{
+    background-color: grey;
+    color:white;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    left: 0;
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 100px;
+    padding-bottom: 10px;
+
+}
+<<<<<<< HEAD
+
+.footer__link--items a {
+    color: #141414;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover{
+    color: #141414;
+    transition: 0.3s ease-out;
+}
+.footer_header{
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #171717;
+  border-radius: 10px;
+}
+
+.footer{
+    
+  background-color: rgb(42, 42, 42);
+  color:white;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  left: 0;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  min-height: 100px;
+  padding-bottom: 10px;
+
+}
+
+.footer_header{
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #171717;
+  border-radius: 10px;
+}
+=======
+>>>>>>> main
+>>>>>>> Stashed changes
