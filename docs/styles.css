@@ -300,6 +300,7 @@
 
 .main__img--container{
     text-align: center;
+    
 }
 
 #main__img{
@@ -400,7 +401,7 @@ color: white;
 padding: 10px;
 font-size: 30px;
 text-align: center;
-background-color: #ff8177;
+background-color: #3f3e3e;
 border-radius: 10px;
 max-width: 1100px;
 height: 400px;
@@ -412,6 +413,7 @@ html{
     box-sizing: border-box;
 }
 body{
+    background-color: #131313;
     position:relative;
     margin: 0;
     min-height: 100%;
