@@ -395,21 +395,13 @@
 }
 
 .about__vid{
-margin-top: 20px;;
+margin-top: 20px;
 margin-bottom: 40px;
 color: white;
 padding: 10px;
 font-size: 30px;
 text-align: center;
-<<<<<<< Updated upstream
 background-color: #3f3e3e;
-=======
-<<<<<<< HEAD
-background-color: #222222;
-=======
-background-color: #3f3e3e;
->>>>>>> main
->>>>>>> Stashed changes
 border-radius: 10px;
 max-width: 1100px;
 height: 400px;
@@ -429,9 +421,19 @@ body{
     box-sizing: inherit;
 }
 
+.footer_header{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
 .footer{
-    
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(27, 27, 27);
     color:white;
     padding-left: 35px;
     padding-right: 35px;
@@ -442,25 +444,11 @@ body{
     bottom: 0;
     min-height: 100px;
     padding-bottom: 10px;
-
+    padding-top: 20px;
 }
 
-.footer_header{
-    margin-top: 5px;
-    margin-bottom: 40px;
+.footer_text{
     color: white;
-    padding: 10px;
-    font-size: 30px;
-    text-align: center;
-    background-color: #171717;
-    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 5px;
 }
-
-
-
-
-
-
-
-  
-
