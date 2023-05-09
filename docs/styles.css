@@ -257,13 +257,14 @@
 }
 
 .main__btn {
-    font-size: 1rem;
+    font-size: 2rem;
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-    padding: 14px 32px;
-    border: none;
+    padding: 14px 14px;
+    border:none;
     border-radius: 4px;
     color: #fff;
     margin-top: 2rem;
+    display:inline-block;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
