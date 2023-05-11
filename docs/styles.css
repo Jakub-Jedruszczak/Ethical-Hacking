@@ -440,3 +440,21 @@ body{
     text-align: left;
     margin-bottom: 5px;
 }
+
+.code-box, code {
+    border-radius: 7px;
+    margin: 0 0 15px 0;
+    padding: 10px 30px;
+    border: 1px solid #161616;
+    display: inline-block;
+    width: 100%;
+    word-break: break-word;
+    text-align: left;
+    font-family: Courier,monospace;
+    background-color: #333333;
+}
+
+.code-scrollable {
+    overflow-x: auto;
+    white-space: pre;
+}
